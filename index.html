@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+        .container {
+            text-align: center;
+        }
+        .rewards {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .reward-icon {
+            font-size: 100px;
+        }
+        .button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎁 Your daily rewards</h1>
+        <div class="reward-icon">🎁</div>
+        <div class="rewards">Pixelverse x Notcoin</div>
+        <div class="rewards">🪙 100,000 Notcoin</div>
+        <button class="button" onclick="window.Telegram.WebApp.close()">Come back tomorrow for check-in day 2</button>
+    </div>
+</body>
+</html>
